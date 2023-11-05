@@ -1,0 +1,22 @@
+{
+  "name": "js-deepcopy",
+  "version": "1.0.0",
+  "description": "example javascript code of deep clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeeweb/js-deepCopy.git"
+  },
+  "author": "Jiee Kong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeeweb/js-deepCopy/issues"
+  },
+  "homepage": "https://github.com/jeeweb/js-deepCopy#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
