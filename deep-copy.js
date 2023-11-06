@@ -1,4 +1,4 @@
-function deepCopy(data) {
+const deepCopy = (data) => {
   let copiedData = {};
 
   // Primitive Type
@@ -43,4 +43,6 @@ function deepCopy(data) {
   }
 
   return copiedData;
-}
+};
+
+module.exports = deepCopy;
