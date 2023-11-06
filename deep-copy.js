@@ -21,6 +21,11 @@ const deepCopy = (data) => {
     copiedData = new Set(data);
   }
 
+  // RegExp
+  if (data instanceof RegExp) {
+    copiedData = new RegExp(data);
+  }
+
   // Array
   if (data instanceof Array) {
     const copiedArr = data.map((elem) => {
