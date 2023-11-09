@@ -23,7 +23,10 @@ const deepCopy = (data) => {
 
   // RegExp
   if (data instanceof RegExp) {
-    copiedData = new RegExp(data);
+    const dataStr = data.toString();
+    const pattern = dataStr.slice(1, dataStr.lastIndexOf("/"));
+    const flags = dataStr.slice(dataStr.lastIndexOf("/") + 1);
+    copiedData = new RegExp(pattern, flags);
   }
 
   // Array
